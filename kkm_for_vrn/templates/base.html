@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{% block head%}
+    <title>
+        {% block title %}
+        {{ page_title | default:"Untitled Page" }}
+        {% endblock title %}
+    </title>
+    <script>var KkmServerAddIn = {};</script>
+    <script>/*KkmServerAddIn*/</script>
+{% endblock head %}
+</head>
+<body>
+    {% block content %}
+    <p>Placeholder text in base template. Replace with page content.</p>
+    
+    
+    {% endblock content %}
+
+
+    {% block ochko %}
+    <style>
+                        .ras {
+                                all: revert;
+                            }
+                        div.CanvasShowMessage {
+                            all: initial;
+                            font-family: unset;
+                            z-index: 100000411;
+                            width: 100%;
+                            height: 100%;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            overflow: auto;
+                            background-color: rgba(0, 0, 0, 0.4);
+                        }
+                        div.WindowsShowMessage { 
+                            padding: 16px;
+                            background-color: #f8f8f8;
+                            color: #333;
+                            border-radius: 10px;
+                            font-family:monospace; 
+                            white-space:nowrap; 
+                            align-items: center; 
+                            justify-content: center; 
+                            font-size:150%;
+                            width: 480px;
+                            height: auto;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            top: 30px;
+                            margin: auto;
+                        }
+                        div.ButtonCloseShowMessage {
+                            position: absolute;
+                            transform: translate(40%, -40%);
+                            top: 0;
+                            right: 0;
+                            z-index: 100000412;
+                            width: 28px;
+                            height: 28px;
+                            color: #333;
+                        }
+                        .closeBtnShowMessage {
+                            width: 28px;
+                            height: 28px;
+                            background-color: #fff;
+                            border: 2px solid #d5d5d5;
+                            -webkit-border-radius: 50%;
+                            border-radius: 50%;
+                            -webkit-box-shadow: 0 4px 12px 0 rgb(0 0 0 / 12%);
+                            box-shadow: 0 4px 12px 0 rgb(0 0 0 / 12%);
+                            background-size: 19px;
+                            display: block;
+                            font-size: 21px;
+                            color: #919191;
+                        }
+    </style>
+                    <div class="ras CanvasShowMessage">
+                        <div class="ras WindowsShowMessage">
+                            <div class="ras ButtonCloseShowMessage">
+                                <button id="closeBtnShowMessage" class="ras closeBtnShowMessage" tabindex="1" aria-label="Закрыть" onclick="KkmServer.CloseMessageWindows('kkmserver.addin.ShowWindows.ShowMessage')">×</button>
+                            </div>
+                            <style>
+                                .f0ShowMessage { 
+                                    font-size:16.6px; 
+                                    margin-top:0;
+                                    margin-bottom:0;
+                                }
+                                .f1ShowMessage { 
+                                    font-size:29.2px; 
+                                    margin-top:0;
+                                    margin-bottom:0;
+                                } 
+                                .f2ShowMessage { 
+                                    font-size:19.5px; 
+                                    margin-top:0;
+                                    margin-bottom:0;
+                                }
+                                .f3ShowMessage { 
+                                    font-size:13.65px; 
+                                    margin-top:0;
+                                    margin-bottom:0;
+                                }
+                                .f4ShowMessage { 
+                                    font-size:11.7px; 
+                                    margin-top:0;
+                                    margin-bottom:0;
+                                } 
+                                .divShowMessage { 
+                                    width:100%;
+                                }
+                            </style>
+                            <p class="ras f0ShowMessage">&nbsp;</p>
+                            <p class="ras f0ShowMessage">------------------------------------------------&nbsp;</p>
+                            <p class="ras f0ShowMessage">&nbsp;</p>
+                            <p class="ras f0ShowMessage">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ООО&nbsp;"Тестовая&nbsp;организация"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p class="ras f0ShowMessage">------------------------------------------------&nbsp;</p>
+                            <p class="ras f0ShowMessage">Пример&nbsp;№1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;154,41&nbsp;</p>
+                            <p class="ras f0ShowMessage">2-рое&nbsp;поле:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,00&nbsp;</p>
+                            <p class="ras f0ShowMessage">------------------------------------------------&nbsp;</p>
+                            <p class="ras f0ShowMessage">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пример&nbsp;№2:&nbsp;&nbsp;&nbsp;&nbsp;4,00&nbsp;</p>
+                            <p class="ras f0ShowMessage">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-рое&nbsp;поле:&nbsp;1544,00&nbsp;</p>
+                            <p class="ras f0ShowMessage">------------------------------------------------&nbsp;</p>
+                            <p class="ras f0ShowMessage">Шрифт&nbsp;№&nbsp;1&nbsp;</p>
+                            <p class="ras f0ShowMessage">Шрифт&nbsp;№&nbsp;2&nbsp;</p>
+                            <p class="ras f0ShowMessage">Шрифт&nbsp;№&nbsp;3&nbsp;</p>
+                            <p class="ras f0ShowMessage">Шрифт&nbsp;№&nbsp;4&nbsp;</p>
+                            <p class="ras f0ShowMessage">------------------------------------------------&nbsp;</p>
+                            <p class="ras f0ShowMessage">------------------линия&nbsp;отреза------------------&nbsp;</p>
+                            <p class="ras f0ShowMessage">&nbsp;</p>
+                            
+                        </div>
+                    </div>
+                
+                
+    {% endblock ochko %}
+</body>
+</html>
