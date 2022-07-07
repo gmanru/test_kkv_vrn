@@ -1,4 +1,3 @@
-import json
 from unicodedata import name
 from django.db import models
 
@@ -86,8 +85,4 @@ class Ticket(models.Model):
         tp = '"Номер места":"'+f'{self.ticket_place}'+'",'
         tpl = '"Тип билета":"'+f'{self.ticket_type}'+'"}'
         out = fio+fly+tn+tp+tpl
-        #print(out)
-        #print(json.loads(out))
-        #json.loads(f'{"ФИО": {self.passenger_name}, "Рейс": ({self.flight}), "Номер билета": {self.ticket_number}, "Номер места": {self.ticket_place}, "Тип билета": {self.ticket_type}')
-        #return f'{self.ticket_place} - {self.ticket_type}, {self.passenger_name} ({self.flight})'
         return out#f'ФИО пассажира: {self.passenger_name}; Рейс: ({self.flight}); Номер билета: {self.ticket_number}; Номер места: {self.ticket_place}; Тип билета: {self.ticket_type};'
